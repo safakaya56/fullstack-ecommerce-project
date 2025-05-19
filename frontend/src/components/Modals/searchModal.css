@@ -1,0 +1,50 @@
+.info {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.searchBar {
+    display: flex;
+    gap: 8px;
+}
+
+.searchBar input {
+    flex: 2;
+}
+
+.searchBar button {
+    flex: 1;
+}
+
+.findProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.findProduct {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+    gap: 5px;
+    padding: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.findProduct:hover {
+    transform: translateY(-4px);
+}
+
+.findProductImg {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .findProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

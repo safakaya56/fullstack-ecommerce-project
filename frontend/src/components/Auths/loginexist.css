@@ -1,0 +1,9 @@
+.eLoginContainer {
+    margin: 200px auto;
+    padding: 80px;
+    max-width: 25rem;
+    max-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,84 @@
+.contactContainer .contactTop {
+    margin-bottom: 20px;
+}
+
+.contactContainer .contactBottom {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 150px;
+    text-wrap: wrap;
+}
+
+.contactContainer .communication {
+    flex: 1;
+}
+
+
+.contactContainer .communication form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.communication .formRow {
+    display: flex;
+    gap: 10px;
+}
+
+.communication .formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.communication .formGroup label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.communication .formGroup input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.communication .formGroup textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contactBottom .communication button {
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactBottom .communication button:hover {
+    background-color: #333;
+}
+
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+@media(max-width:768px) {
+
+    .contactBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,96 @@
+.cartContainer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.cartContainer button{
+    height: 40px;
+    padding: 10px;
+}
+
+.cartContainer .productList {
+    margin-bottom: 20px;
+}
+
+.cartContainer .productList .productsTable th,
+.productsTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cartContainer .productList .productsTable th {
+    background-color: #f8f8f8;
+}
+
+.cartContainer .productList .cartImgBox>.removeIcon {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.cartContainer .couponSection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cartContainer .couponSection button {
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.cartContainer .cartTotals {
+    border: 1px solid #ddd;
+    padding: 60px;
+    text-align: left;
+}
+
+.cartContainer .cartTotals h3 {
+    margin-bottom: 12px;
+}
+
+.cartContainer .cartTotals ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cartContainer .cartTotals li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.cartContainer .cartTotals .checkoutBtn {
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cartImgBox {
+    position: relative;
+}
+
+
+
+@media (max-width: 980px) {
+    .cartContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,84 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer .topContianer {
+    background-color: black;
+}
+
+.footerContainer .footerTop {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 40px;
+}
+
+.footerContainer .footerTop .inputGroup input {
+    width: 250px;
+    height: 50px;
+}
+
+.footerTop .inputGroup button {
+    width: 120px;
+    height: 49px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-left: none;
+}
+
+.footerTop .inputGroup button:hover {
+    background-color: #333;
+}
+
+.footerTop .footerContact .downloadApp img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+
+.footerContainer .footerBottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    border-top: 1px solid gray;
+    padding: 40px;
+}
+
+.footerBottom .footerLinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footerContainer .footerLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerContainer .footerLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 800px) {
+
+    .footerContainer .footerTop {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerContainer .footerBottom {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footerContainer .footerLinks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

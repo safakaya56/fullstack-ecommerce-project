@@ -1,0 +1,1 @@
+export const CLIENT_DOMAIN = import.meta.env.VITE_API_CLIENT_DOMAIN;
